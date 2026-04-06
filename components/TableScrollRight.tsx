@@ -527,13 +527,6 @@ export default function TableScrollRight() {
   }, []);
 
   const activeKit = KIT_DETAILS[activeKitIndex];
-  const activeKitSource = KIT_SOURCES[Math.max(0, Math.min(KIT_SOURCES.length - 1, activeKitIndex))];
-  const activeKitOverlayScale =
-    (KIT_SIZE_CONTROLS[Math.max(0, Math.min(KIT_SIZE_CONTROLS.length - 1, activeKitIndex))]
-      ?.overlayScale ?? 1);
-  const activeKitPositionOffset =
-    (KIT_POSITION_OFFSETS[Math.max(0, Math.min(KIT_POSITION_OFFSETS.length - 1, activeKitIndex))] ??
-      KIT_POSITION_OFFSETS[0]);
 
   return (
     <section ref={sectionRef} className="w-full overflow-x-hidden bg-[#eef0ed] py-3 sm:py-4 md:py-8">
@@ -575,18 +568,6 @@ export default function TableScrollRight() {
           </div>
           <div className="relative order-2 ml-auto min-w-0 h-[270px] w-full translate-x-0 sm:h-[380px] md:h-[520px] md:w-[90%] md:translate-x-3 lg:h-[680px] lg:w-[88%] lg:translate-x-6">
             <canvas ref={canvasRef} className="h-full w-full" />
-            <img
-              src={activeKitSource}
-              alt={activeKit.title}
-              className="pointer-events-none absolute z-10 h-auto w-[48%] max-w-[440px] -translate-x-1/2 -translate-y-[42%] object-contain opacity-95 sm:w-[46%] md:w-[44%] lg:w-[40%]"
-              style={{
-                left: `calc(50% + ${(activeKitPositionOffset.xRatio * 100).toFixed(2)}%)`,
-                top: `calc(50% + ${(activeKitPositionOffset.yRatio * 100).toFixed(2)}%)`,
-                scale: activeKitOverlayScale,
-                transformOrigin: "center",
-              }}
-              draggable={false}
-            />
           </div>
         </div>
       </div>
