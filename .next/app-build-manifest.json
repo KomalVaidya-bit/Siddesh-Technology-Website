@@ -1,9 +1,9 @@
 {
   "pages": {
-    "/labs/ai-and-mechatronics-innovation-lab/page": [
+    "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/labs/ai-and-mechatronics-innovation-lab/page.js"
+      "static/chunks/app/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -11,25 +11,20 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/page": [
+    "/labs/ai-and-mechatronics-innovation-lab/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/chunks/app/labs/ai-and-mechatronics-innovation-lab/page.js"
     ],
     "/about-us/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/about-us/page.js"
     ],
-    "/social-initiatives/page": [
+    "/labs/mathematics-lab/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/social-initiatives/page.js"
-    ],
-    "/our-products/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/our-products/page.js"
+      "static/chunks/app/labs/mathematics-lab/page.js"
     ]
   }
 }

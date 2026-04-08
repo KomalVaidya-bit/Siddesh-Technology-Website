@@ -189,11 +189,11 @@ export default function TableScrollLeft({
               className={`mx-auto min-w-0 max-w-2xl space-y-3 text-center md:max-w-none md:space-y-4 ${tableOnRight ? "md:order-1 md:mx-0 md:text-left" : "md:order-2 md:mx-0 md:text-left"}`}
             >
 
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0ea5e9] leading-[1.15]">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#2F5AA8] leading-[1.15]">
               Discover AI and Mechatronics Innovation Lab
             </h2>
 
-            <div className="h-[3px] w-16 bg-yellow-400 mx-auto md:mx-0"></div>
+            <div className="h-[3px] w-16 bg-[#2563eb] mx-auto md:mx-0"></div>
 
             <p className="text-[#1f2d2b] leading-[1.55] text-[0.98rem] sm:text-[1.02rem]">
               Interactive AI and Mechatronics Innovation Lab for schools to empower students
@@ -201,13 +201,13 @@ export default function TableScrollLeft({
               platform, practical activity books and annual innovation fest.
             </p>
 
-            <p className="text-[#0ea5e9] font-semibold text-[1.4rem] md:text-[1.6rem] leading-none">
-              Modules ✈️
+            <p className="text-[#2F5AA8] font-semibold text-[1.4rem] md:text-[1.6rem] leading-none">
+              Modules 
             </p>
               {hideText && tableOnRight ? <div className="hidden md:block md:order-1" aria-hidden /> : null}
 
 
-            <button className="rounded-2xl bg-[#0ea5e9] px-6 py-2.5 text-white text-base sm:text-lg font-bold shadow-md w-full sm:w-auto">
+            <button className="rounded-2xl bg-[#2F5AA8] hover:bg-[#1d4ed8] transition-all duration-300 px-6 py-2.5 text-white text-base sm:text-lg font-bold shadow-md w-full sm:w-auto">
               What's Covered
             </button>
 
@@ -226,7 +226,7 @@ export default function TableScrollLeft({
               ].map((item) => (
                 <span
                   key={item}
-                  className="block w-full break-words rounded-2xl bg-[#c9dde9] px-2.5 sm:px-3 py-1.5 text-center text-sm sm:text-base font-semibold text-[#0ea5e9]"
+                  className="block w-full break-words rounded-2xl bg-[#c9dde9] px-2.5 sm:px-3 py-1.5 text-center text-sm sm:text-base font-semibold text-[#1e3a8a]"
                 >
                   {item}
                 </span>

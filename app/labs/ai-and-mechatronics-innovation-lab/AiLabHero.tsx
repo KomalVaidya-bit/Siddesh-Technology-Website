@@ -72,7 +72,7 @@ const statIcons = [
 
 export default function AiLabHero() {
   return (
-    <section className="relative min-h-screen overflow-x-hidden bg-[#3FA7D6] pb-16 pt-36 sm:pb-20 sm:pt-40 md:pb-40 md:pt-44">
+    <section className="relative min-h-screen overflow-x-hidden bg-gradient-to-br from-[#0f172a] via-[#1e3a8a] to-[#2563eb] pb-16 pt-36 sm:pb-20 sm:pt-40 md:pb-40 md:pt-44">
       <div className="mx-auto grid w-full max-w-6xl items-center gap-8 px-4 pb-8 sm:px-6 sm:pb-10 md:grid-cols-[1.08fr_0.92fr] md:pb-24">
         <motion.div
           initial={{ opacity: 0, x: -30 }}
@@ -153,7 +153,7 @@ export default function AiLabHero() {
         <div className="grid w-full max-w-6xl gap-x-0 gap-y-10 rounded-3xl border border-white/80 bg-white px-4 pb-8 pt-12 shadow-[0_18px_40px_rgba(15,23,42,0.22)] sm:grid-cols-2 md:grid-cols-4">
           {stats.map((stat, index) => (
             <div key={stat.label} className="relative px-2 text-center sm:px-4">
-              <div className="absolute left-1/2 top-0 flex h-[70px] w-[70px] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-[4px] border-white bg-[#3FA7D6] text-white shadow-md sm:h-[100px] sm:w-[100px] sm:border-[5px]">
+              <div className="absolute left-1/2 top-0 flex h-[70px] w-[70px] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border-[4px] border-white bg-gradient-to-br from-[#1e3a8a] to-[#2563eb] text-white shadow-md sm:h-[100px] sm:w-[100px] sm:border-[5px]">
                 {statIcons[index]}
               </div>
               <div className="pt-11 sm:pt-16">

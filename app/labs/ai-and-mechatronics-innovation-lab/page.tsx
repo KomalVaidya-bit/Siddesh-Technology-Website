@@ -5,10 +5,18 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Navbar from "../../../components/Navbar";
 import TableScrollClient from "../../../components/TableScrollClient";
-import TableScrollRight from "../../../components/TableScrollRight";
+// import TableScrollRight from "../../../components/TableScrollRight";
 import TableScrollRightClone from "../../../components/TableScrollRightClone";
 import AiLabHero from "./AiLabHero";
 import AiLabIntro from "./AiLabIntro";
+import TechFocusSection from "@/components/ai-lab/TechFocusSection";
+import AiKitSection from "@/components/ai-lab/AiKitSection";
+import AiKitSectionReverse from "@/components/ai-lab/AiKitSectionReverse";
+import TechFocusSectionclone from "@/components/ai-lab/TechFocusSection";
+import AutoScrollCards from "@/components/ai-lab/AutoScrollCards";
+import DemoSection from "@/components/ai-lab/BookDemoSection";
+
+
 
 
 
@@ -108,8 +116,14 @@ export default function Page() {
       <Navbar floating overlay />
       <AiLabHero />
       <AiLabIntro />
-      <TableScrollRight />
+      {/* <TableScrollRight /> */}
       <TableScrollRightClone />
+      <TechFocusSection /> 
+      <AiKitSection/>
+      <AiKitSectionReverse />
+      <TechFocusSectionclone/>
+      <AutoScrollCards />
+      <DemoSection />
       <section
         ref={heroRef}
         className="mx-auto grid w-full max-w-5xl items-center gap-6 px-4 pb-8 pt-2 md:grid-cols-[1.1fr_0.9fr] md:px-6 md:pb-10"
