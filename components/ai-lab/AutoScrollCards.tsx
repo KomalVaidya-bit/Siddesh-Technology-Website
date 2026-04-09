@@ -110,7 +110,7 @@ export default function AutoScrollCards() {
   if (!el) return;
 
   let speed = 1; // 🔥 adjust speed here
-  let rafId;
+  let rafId: number;
 
   const startScroll = () => {
     el.scrollLeft += speed;
